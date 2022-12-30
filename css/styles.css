@@ -1,0 +1,251 @@
+:root {
+    --bg-color1: #FFF2F2;
+    --bg-color2: #FAD4D4;
+    --bg-color3: #EF9F9F;
+    --bg-color4: #F47C7C;
+    --font-color1: #0D0C22;
+    --font-color2: #0000008C;
+}
+
+body {
+    margin: 0;
+    font-family: 'Bitter', serif;
+    font-weight: 300;
+    background-color: var(--bg-color1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.big-heading {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.sub-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.normal-heading {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.small-heading {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+.bg-color1 {
+    background-color: var(--bg-color1);
+}
+
+.bg-color2 {
+    background-color: var(--bg-color2);
+}
+
+.bg-color3 {
+    background-color: var(--bg-color3);
+}
+
+.bg-color4 {
+    background-color: var(--bg-color4);
+}
+
+.color-text1 {
+    color: var(--bg-color1);
+}
+
+.color-text2 {
+    color: var(--bg-color2);
+}
+
+.color-text3 {
+    color: var(--bg-color3);
+}
+
+.color-text4 {
+    color: var(--bg-color4);
+}
+
+.primary-btn {
+    background-color: var(--bg-color4);
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.primary-btn:hover {
+    background-color: var(--bg-color3);
+    transition: .3s all ease-in-out;
+    color: #fff;
+}
+
+.primary-btn-active {
+    background-color: var(--bg-color4);
+    transition: .3s all ease-in-out;
+    color: #fff !important;
+}
+
+.secondary-btn {
+    border: 1px solid var(--bg-color4);
+    color: var(--bg-color4);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.secondary-btn:hover {
+    background-color: var(--bg-color4);
+    color: #fff;
+    transition: .3s all ease-in-out;
+}
+
+/* navbar styles */
+.logo {
+    font-weight: 400;
+    font-family: 'Bitter', serif;
+}
+
+.logo-icon {
+    color: var(--bg-color4);
+}
+
+.logo:hover {
+    color: var(--bg-color4);
+    transition: .5s all ease-in-out;
+}
+
+.nav-link {
+    font-weight: 400;
+}
+
+.nav-link.active {
+    color: var(--bg-color4) !important;
+}
+
+.nav-link:hover {
+    color: var(--bg-color4);
+    transition: .5s all ease-in-out;
+}
+
+.dropdown-menu {
+    background-color: var(--bg-color1);
+}
+
+.dropdown-item:hover {
+    color: var(--bg-color4);
+    background-color: var(--bg-color1);
+}
+.menu-icon {
+    font-size: 1.5rem !important;
+    color: var(--font-color2);
+}
+
+/* carousal section */
+.badge {
+    font-weight: 400;
+}
+
+/* what we server section */
+.card-content-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.card-content-section:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: .8s all ease-in;
+    cursor: pointer;
+} 
+.card-title {
+    font-size: 1.425rem;
+    font-weight: 400;
+}
+.card-price {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-shadow: none;
+}
+
+.order-btn {
+    width: 135px !important;
+}
+
+.slick-slide {
+    padding: 10px;
+}
+
+.slick-slide img {
+    height:350px;
+}
+
+/* footer text */
+.footer-title {
+    font-weight: 700;
+    color: var(--font-color1);
+}
+.footer-text {
+    font-size: .925rem !important;
+}
+
+.social-icon {
+    color: var(--font-color1);
+    transition: .3s all ease;
+}
+
+.social-icon:hover { 
+    color: var(--bg-color1);
+}
+
+/* contact us section */
+input::placeholder, 
+textarea::placeholder {
+    font-size: .925rem;
+    letter-spacing: .1rem;
+}
+
+input:focus, 
+textarea:focus {
+    border-color: var(--bg-color3) !important;
+    box-shadow: 0 0 0 0.02rem var(--bg-color3) !important;
+}
+
+
+/* menu section */
+
+.article-image {
+    height: 200px;
+    border: 5px solid var(--bg-color4);
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.article-title {
+    border-bottom: 1px dotted;
+}
+
+.article-title h4 {
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: .15rem;
+}
+
+@media(max-width: 425px) {
+    .article-title h4 {
+        font-weight: 700;
+        font-size: 1.rem;
+        letter-spacing: normal;
+    }
+}
+
+@media(max-width: 767px) {
+    .article-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(min-width: 1200px) {
+    .article-image {
+        height: 150px !important;
+    }
+}
